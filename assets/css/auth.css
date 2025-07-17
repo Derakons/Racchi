@@ -1,0 +1,410 @@
+/* 
+ * Estilos para páginas de autenticación
+ * Login, registro, reset password
+ */
+
+/* Contenedor principal de autenticación */
+.auth-main {
+    /* Ajuste para evitar solapamiento con el header */
+    padding-top: 80px;
+    min-height: calc(100vh - 80px);
+    background: linear-gradient(135deg,
+        var(--primary-color) 0%, 
+        var(--secondary-color) 50%, 
+        var(--accent-color) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-lg);
+}
+
+.auth-container {
+
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xxl);
+    max-width: 1000px;
+    width: 100%;
+    align-items: center;
+}
+
+/* Tarjeta de autenticación */
+.auth-card {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xxl);
+    box-shadow: var(--shadow-xl);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.auth-logo {
+    margin-bottom: var(--spacing-lg);
+}
+
+.auth-logo img {
+    height: 60px;
+    width: auto;
+}
+
+.auth-header h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 700;
+}
+
+.auth-header p {
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+/* Formulario de autenticación */
+.auth-form {
+    margin-bottom: var(--spacing-xl);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 500;
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group i {
+    position: absolute;
+    left: var(--spacing-md);
+    color: var(--gray);
+    z-index: 2;
+}
+
+.input-group input {
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) 2.5rem;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    background: var(--bg-glass);
+    transition: var(--transition-fast);
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(139, 69, 19, 0.2);
+    background: var(--white-full);
+}
+
+.password-toggle {
+    position: absolute;
+    right: var(--spacing-md);
+    background: none;
+    border: none;
+    color: var(--gray);
+    cursor: pointer;
+    padding: var(--spacing-xs);
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-fast);
+    z-index: 2;
+}
+
+.password-toggle:hover {
+    color: var(--primary-color);
+    background: var(--bg-glass);
+}
+
+/* Opciones del formulario */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+}
+
+.checkbox-label input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    height: 18px;
+    width: 18px;
+    background: var(--bg-glass);
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    margin-right: var(--spacing-sm);
+    position: relative;
+    transition: var(--transition-fast);
+}
+
+.checkbox-label:hover .checkmark {
+    border-color: var(--primary-color);
+}
+
+.checkbox-label input:checked ~ .checkmark {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.checkbox-label input:checked ~ .checkmark::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid var(--white-full);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.link-secondary {
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition-fast);
+}
+
+.link-secondary:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.link-primary {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition-fast);
+}
+
+.link-primary:hover {
+    text-decoration: underline;
+}
+
+/* Botones del formulario */
+.btn-full {
+    width: 100%;
+    justify-content: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: 1rem;
+}
+
+/* Footer del auth */
+.auth-footer {
+    text-align: center;
+}
+
+.auth-footer p {
+    color: var(--gray);
+    margin-bottom: var(--spacing-lg);
+    font-size: 0.9rem;
+}
+
+.auth-divider {
+    position: relative;
+    margin: var(--spacing-lg) 0;
+    text-align: center;
+}
+
+.auth-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--border-color);
+}
+
+.auth-divider span {
+    background: var(--white-full);
+    padding: 0 var(--spacing-md);
+    color: var(--gray);
+    font-size: 0.9rem;
+    position: relative;
+}
+
+/* Panel de información */
+.auth-info {
+    color: var(--white-full);
+}
+
+.auth-info h2 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-lg);
+    font-weight: 700;
+    color: var(--white-full);
+}
+
+.auth-info ul {
+    list-style: none;
+    margin-bottom: var(--spacing-xl);
+}
+
+.auth-info ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.auth-info ul li i {
+    margin-right: var(--spacing-sm);
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.contact-support {
+    background: var(--bg-glass);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.contact-support h3 {
+    color: var(--white-full);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.2rem;
+}
+
+.contact-support p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: var(--spacing-md);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.contact-support .btn {
+    color: var(--white-full);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-support .btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--white-full);
+}
+
+/* Alertas */
+.alert {
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: 0.9rem;
+}
+
+.alert-error {
+    background: rgba(198, 40, 40, 0.1);
+    color: var(--error-color);
+    border: var(--border-width) solid rgba(198, 40, 40, 0.3);
+}
+
+.alert-success {
+    background: rgba(46, 125, 50, 0.1);
+    color: var(--success-color);
+    border: var(--border-width) solid rgba(46, 125, 50, 0.3);
+}
+
+.alert-warning {
+    background: rgba(255, 143, 0, 0.1);
+    color: var(--warning-color);
+    border: var(--border-width) solid rgba(255, 143, 0, 0.3);
+}
+
+.alert-info {
+    background: rgba(25, 118, 210, 0.1);
+    color: var(--info-color);
+    border: var(--border-width) solid rgba(25, 118, 210, 0.3);
+}
+
+/* Animación de carga */
+.icon-loading {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .auth-container {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+    
+    .auth-info {
+        order: -1;
+        text-align: center;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .auth-info h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .auth-main {
+        padding: var(--spacing-md);
+    }
+    
+    .auth-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .form-options {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        align-items: flex-start;
+    }
+    
+    .contact-support {
+        padding: var(--spacing-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-card {
+        padding: var(--spacing-md);
+    }
+    
+    .auth-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .auth-info h2 {
+        font-size: 1.25rem;
+    }
+}

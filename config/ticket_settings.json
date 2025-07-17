@@ -1,0 +1,6 @@
+{
+    "adult_price": 15.00,
+    "student_price": 8.00,
+    "child_price": 5.00,
+    "daily_capacity": 500
+}

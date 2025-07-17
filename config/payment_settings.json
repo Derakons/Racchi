@@ -1,0 +1,5 @@
+{
+    "payment_methods": ["cash", "card", "yape", "plin"],
+    "yape_number": "984 123 456",
+    "plin_number": "984 123 456"
+}

@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "nombre_reviewer": "Mar\u00eda Gonz\u00e1lez",
+        "email_reviewer": "maria.gonzalez@email.com",
+        "rating": 5,
+        "contenido": "Una experiencia incre\u00edble. El lugar es m\u00e1gico y los gu\u00edas muy conocedores de la historia.",
+        "estado": "aprobada",
+        "fecha_creacion": "2025-07-15 01:25:29",
+        "ip_address": "192.168.1.100"
+    },
+    {
+        "id": 2,
+        "nombre_reviewer": "John Smith",
+        "email_reviewer": "john.smith@email.com",
+        "rating": 4,
+        "contenido": "Amazing place! The pottery workshops were fascinating and the food was delicious.",
+        "estado": "aprobada",
+        "fecha_creacion": "2025-07-10 01:25:29",
+        "ip_address": "10.0.0.50"
+    },
+    {
+        "id": 3,
+        "nombre_reviewer": "Carlos Mendoza",
+        "email_reviewer": "carlos.mendoza@email.com",
+        "rating": 5,
+        "contenido": "Muy recomendable. El transporte fue puntual y el sitio arqueol\u00f3gico impresionante.",
+        "estado": "aprobada",
+        "fecha_creacion": "2025-07-03 01:25:29",
+        "ip_address": "172.16.0.25"
+    },
+    {
+        "id": 4,
+        "nombre_reviewer": "Roberto Silva",
+        "email_reviewer": "roberto.silva@email.com",
+        "rating": 3,
+        "contenido": "El lugar es bonito pero esperaba m\u00e1s informaci\u00f3n hist\u00f3rica.",
+        "estado": "aprobada",
+        "fecha_creacion": "2025-07-14 01:25:29",
+        "ip_address": "203.0.113.10"
+    },
+    {
+        "id": 5,
+        "nombre_reviewer": "Lisa Johnson",
+        "email_reviewer": "lisa.johnson@email.com",
+        "rating": 2,
+        "contenido": "The site was okay but not as impressive as other ruins we visited.",
+        "estado": "rechazada",
+        "fecha_creacion": "2025-07-12 01:25:29",
+        "ip_address": "198.51.100.42"
+    },
+    {
+        "id": 6,
+        "name": "dante",
+        "email": "dera.kons@gmail.com",
+        "rating": 3,
+        "content": "muy genial",
+        "location": "SIcuani, Peru",
+        "visit_date": "2025-07-17",
+        "created_at": "2025-07-17 01:56:19",
+        "status": "approved",
+        "helpful_yes": 0,
+        "helpful_no": 0,
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36"
+    },
+    {
+        "id": 7,
+        "name": "Robert",
+        "email": "derakons@gmail.com",
+        "rating": 1,
+        "content": "asdsdaasdasd",
+        "location": "SIcuani, Peru",
+        "visit_date": "2025-07-17",
+        "created_at": "2025-07-17 02:30:23",
+        "status": "approved",
+        "helpful_yes": 0,
+        "helpful_no": 0,
+        "ip_address": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/138.0.0.0 Safari\/537.36"
+    }
+]

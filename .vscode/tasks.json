@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start XAMPP and Open Raqchi",
+			"type": "shell",
+			"command": "start",
+			"args": [
+				"http://localhost/Racchi/admin/configuracion.php"
+			],
+			"group": "test",
+			"isBackground": false
+		}
+	]
+}

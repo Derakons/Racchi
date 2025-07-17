@@ -1,0 +1,9 @@
+{"timestamp":"2025-07-17 01:38:37","level":"info","message":"Rese\u00f1a aprobada","context":{"review_id":4},"user_id":"44285cbb-8c71-4de0-87d5-563cb2db978b","ip":"::1"}
+{"timestamp":"2025-07-17 01:38:59","level":"info","message":"Rese\u00f1a aprobada","context":{"review_id":1},"user_id":"44285cbb-8c71-4de0-87d5-563cb2db978b","ip":"::1"}
+{"timestamp":"2025-07-17 01:56:19","level":"info","message":"Nueva rese\u00f1a enviada","context":{"review_id":6,"rating":3,"reviewer":"dante"},"user_id":"44285cbb-8c71-4de0-87d5-563cb2db978b","ip":"::1"}
+{"timestamp":"2025-07-17 02:05:35","level":"info","message":"Rese\u00f1a aprobada","context":{"review_id":6},"user_id":"44285cbb-8c71-4de0-87d5-563cb2db978b","ip":"::1"}
+{"timestamp":"2025-07-17 02:19:25","level":"warning","message":"Rese\u00f1a eliminada","context":{"review_id":7},"user_id":"44285cbb-8c71-4de0-87d5-563cb2db978b","ip":"::1"}
+{"timestamp":"2025-07-17 02:30:23","level":"info","message":"Nueva rese\u00f1a enviada","context":{"review_id":7,"rating":1,"reviewer":"Robert"},"user_id":"44285cbb-8c71-4de0-87d5-563cb2db978b","ip":"::1"}
+{"timestamp":"2025-07-17 02:30:37","level":"info","message":"Rese\u00f1a aprobada","context":{"review_id":7},"user_id":"44285cbb-8c71-4de0-87d5-563cb2db978b","ip":"::1"}
+{"timestamp":"2025-07-17 03:51:37","level":{"reviewer_name":"dante","rating":1,"ip":"::1"},"message":"review_submitted","context":[],"user_id":"44285cbb-8c71-4de0-87d5-563cb2db978b","ip":"::1"}
+{"timestamp":"2025-07-17 03:51:58","level":"info","message":"Rese\u00f1a aprobada","context":{"review_id":"8d6e4b4b-35b4-4a3c-932f-8400ce06accd"},"user_id":"44285cbb-8c71-4de0-87d5-563cb2db978b","ip":"::1"}

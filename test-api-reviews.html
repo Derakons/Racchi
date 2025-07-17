@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test API Reviews</title>
+</head>
+<body>
+    <h1>Prueba de API de Reseñas</h1>
+    <div id="status">Cargando...</div>
+    <div id="results"></div>
+    
+    <script>
+        async function testAPI() {
+            const statusDiv = document.getElementById('status');
+            const resultsDiv = document.getElementById('results');
+            
+            try {
+                statusDiv.textContent = 'Probando API...';
+                
+                const response = await fetch('/Racchi/api/reviews.php');
+                const data = await response.json();
+                
+                statusDiv.textContent = `API respondió: ${response.status}`;
+                
+                resultsDiv.innerHTML = `
+                    <h2>Respuesta de la API:</h2>
+                    <p><strong>Éxito:</strong> ${data.success}</p>
+                    <p><strong>Total de reseñas:</strong> ${data.total}</p>
+                    <p><strong>Promedio de calificación:</strong> ${data.stats?.average_rating}</p>
+                    
+                    <h3>Reseñas:</h3>
+                    <div>
+                        ${data.reviews?.map(review => `
+                            <div style="border: 1px solid #ccc; margin: 10px; padding: 10px;">
+                                <h4>${review.name} - ${review.rating}⭐</h4>
+                                <p><strong>Título:</strong> ${review.title}</p>
+                                <p><strong>Contenido:</strong> ${review.content}</p>
+                                <p><strong>Fecha:</strong> ${review.date}</p>
+                            </div>
+                        `).join('') || 'Sin reseñas'}
+                    </div>
+                `;
+                
+            } catch (error) {
+                statusDiv.textContent = 'Error: ' + error.message;
+                resultsDiv.innerHTML = '<p>Error al cargar los datos</p>';
+                console.error('Error:', error);
+            }
+        }
+        
+        // Ejecutar la prueba al cargar la página
+        testAPI();
+    </script>
+</body>
+</html>
