@@ -87,6 +87,8 @@ function includeNavigation() {
     echo '<li><a href="' . SITE_URL . '/public/tickets.php">' . rqText('tickets') . '</a></li>';
     echo '<li><a href="' . SITE_URL . '/public/services.php">' . rqText('services') . '</a></li>';
     echo '<li><a href="' . SITE_URL . '/public/reviews.php">' . rqText('reviews') . '</a></li>';
+    echo '<li><a href="' . SITE_URL . '/public/gallery.php">' . rqText('gallery') . '</a></li>';
+    echo '<li><a href="' . SITE_URL . '/public/faq.php">' . rqText('faq') . '</a></li>';
     echo '<li><a href="' . SITE_URL . '/public/help.php">' . rqText('help') . '</a></li>';
     echo '</ul>';
     echo '</div>';
